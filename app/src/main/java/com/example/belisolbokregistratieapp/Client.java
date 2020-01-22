@@ -3,6 +3,8 @@ package com.example.belisolbokregistratieapp;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
+
+//Later deze in een Model folder steken
 public class Client
 {
     String id,name,phone,address,kantoorCode, land;
