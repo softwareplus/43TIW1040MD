@@ -12,8 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Registration">
+
+
+        </activity>
         <activity android:name=".EditActivity" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".ListActivity" />
         <activity android:name=".DetailData" />
         <activity
             android:name=".MainActivity"
@@ -21,12 +25,11 @@
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register">
-
-        </activity>
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>
