@@ -7,4 +7,31 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="ERROR">ERROR</string>
+    <string name="WARNING">WARNING</string>
+    <string name="INFORMATION">INFORMATION</string>
+    <string name="VERBOSE">VERBOSE</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_registrationoverview_list">RegistrationOverviews</string>
+    <string name="title_registrationoverview_detail">RegistrationOverview Detail</string>
+    <string name="title_expedition_list">Expeditions</string>
+    <string name="title_expedition_detail">Expedition Detail</string>
+    <string name="title_expeditionregistration_list">ExpeditionRegistrations</string>
+    <string name="title_expeditionregistration_detail">ExpeditionRegistration Detail</string>
+
 </resources>

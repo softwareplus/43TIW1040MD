@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logging settings"/>
+
+        <CheckBox android:id="@+id/check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/INFORMATION"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/WARNING"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/check_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ERROR"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/check_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/VERBOSE"
+            android:onClick="onCheckboxClicked"/>
+
+
+</LinearLayout>

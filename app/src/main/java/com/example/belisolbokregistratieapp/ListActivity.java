@@ -69,7 +69,8 @@ public class ListActivity extends AppCompatActivity {
     }
 
 
-    public void refresh_list(){
+    public void refresh_list()
+    {
         listItems.clear();
         adapter = new MyAdapter(listItems,getApplicationContext());
         recyclerView.setAdapter(adapter);

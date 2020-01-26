@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 myIntent = new Intent(MainActivity.this, ListActivity.class);
                 MainActivity.this.startActivity(myIntent);
 
-
                 break;
             case R.id.ItemConfiguration:
-                Toast.makeText(MainActivity.this,"Instellingen", Toast.LENGTH_SHORT).show();
+                myIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                MainActivity.this.startActivity(myIntent);
                 break;
         }
         return false;
