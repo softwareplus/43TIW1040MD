@@ -64,6 +64,7 @@ public class TableControllerLogging extends DatabaseHandler
                 logging.id = cursor.getString(cursor.getColumnIndex("id"));
                 logging.messageType = cursor.getString(cursor.getColumnIndex("messageType"));
                 logging.messageValue = cursor.getString(cursor.getColumnIndex("messageValue"));
+
                 logitems.add(logging);
 
 

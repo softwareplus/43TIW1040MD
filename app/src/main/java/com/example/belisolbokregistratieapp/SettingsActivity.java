@@ -1,5 +1,6 @@
 package com.example.belisolbokregistratieapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -71,5 +72,21 @@ public class SettingsActivity extends AppCompatActivity
         mySettings.update();
 
 
-        }
+    }
+
+    public void onCheckboxClickedPreferences(View view)
+    {
+
+        SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
+        editor.putString("name", "Elena");
+        editor.putInt("idName", 12);
+        editor.apply();
+
+        //deze naar de load brengen
+        SharedPreferences prefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
+        String name = prefs.getString("name", "No name defined");//"No name defined" is the default value.
+        int idName = prefs.getInt("idName", 0); //0 is the default value.
+    }
+
+
 }

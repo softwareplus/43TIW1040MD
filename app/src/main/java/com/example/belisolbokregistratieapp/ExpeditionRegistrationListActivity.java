@@ -70,6 +70,7 @@ public class ExpeditionRegistrationListActivity extends AppCompatActivity {
 
 
 
+
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, loggings, mTwoPane));
 
     }

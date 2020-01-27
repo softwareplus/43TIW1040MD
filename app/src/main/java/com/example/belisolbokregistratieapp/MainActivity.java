@@ -52,18 +52,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch(menuItem.getItemId())
         {
             case R.id.ItemDelivery:
-                Toast.makeText(MainActivity.this,"Expeditie", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Expeditie", Toast.LENGTH_SHORT).show();
                 myIntent = new Intent(MainActivity.this, Registration.class);
                 MainActivity.this.startActivity(myIntent);
                 break;
             case R.id.ItemSearch:
-                Toast.makeText(MainActivity.this,"Zoeken", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Zoeken", Toast.LENGTH_SHORT).show();
                 myIntent = new Intent(MainActivity.this, ListActivity.class);
                 MainActivity.this.startActivity(myIntent);
 
                 break;
             case R.id.ItemConfiguration:
                 myIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                MainActivity.this.startActivity(myIntent);
+                break;
+            case R.id.ItemConfigurationLookup:
+                myIntent = new Intent(MainActivity.this, ExpeditionRegistrationListActivity.class);
                 MainActivity.this.startActivity(myIntent);
                 break;
         }
