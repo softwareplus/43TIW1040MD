@@ -103,6 +103,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             @Override
             public void onClick(final View view) {
                 Intent intent;
+
+                Intent intent2 = new Intent(view.getContext(), EditActivity.class);
+                intent2.putExtra("id", listItem.getId());
+                intent2.putExtra("name",listItem.getName());
+                intent2.putExtra("address",listItem.getAddress());
+                intent2.putExtra("phone", listItem.getPhone());
+                intent2.putExtra("opmerking", listItem.getOpmerking());
+                view.getContext().startActivity(intent2);
+
+                /*
                 AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
                 final ProgressDialog dialog = new ProgressDialog(view.getContext());
                 dialog.setMessage("Loading Delete Data");
@@ -138,7 +148,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
                     }
                 });
 
+
+
                 builder.create().show();
+
+                 */
             }
         });
     }

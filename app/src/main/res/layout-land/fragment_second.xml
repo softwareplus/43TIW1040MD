@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FirstFragment"
+    tools:context=".SecondFragment"
     android:orientation="vertical"
     >
 
@@ -13,25 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="REGISTREER GLASBOK"
+        android:layout_marginTop="1dp"
+        android:text="REGISTREER RAAMBOK"
         android:textColor="@color/c1"
-        android:textSize="25sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="GlasOrder:"
+        android:layout_marginTop="1dp"
+        android:text="RaamOrder:"
         android:textColor="@color/c1"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtOrderNumber"
-    />
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:text="Colli:"
         android:textColor="@color/c1"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         android:layout_centerHorizontal="true"
         android:text="Datum:"
         android:textColor="@color/c1"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
         />
 
     <Button
-        android:id="@+id/firstButton"
+        android:id="@+id/btnRaamBok"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -72,7 +72,7 @@
         android:background="@color/c2"
         android:text="Registreer"
         android:textColor="@color/c3"
-        android:textSize="20sp"
+        android:textSize="12sp"
         android:textStyle="bold" />
 
     <ProgressBar

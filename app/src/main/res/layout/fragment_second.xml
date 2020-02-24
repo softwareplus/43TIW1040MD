@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SecondFragment"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
     >
 
     <!--TextView and Button displayed in First Fragment -->

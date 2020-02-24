@@ -35,7 +35,7 @@ public class EditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit);
 
         //Bespreking met Ben : 2020-01-21
-        //nu enkel opmeking updaten
+        //nu enkel opmerking updaten
         //In tweede fase, als we met rechten gaan werken,
         //moeten we alle velden kunnen updaten
 

@@ -12,7 +12,4 @@
         android:id="@+id/ItemConfiguration"
         android:title="Instellingen"/>
 
-    <item
-        android:id="@+id/ItemConfigurationLookup"
-        android:title="Instellingen Bekijken"/>
 </menu>

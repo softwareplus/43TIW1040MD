@@ -12,7 +12,7 @@ import androidx.preference.PreferenceFragmentCompat;
 public class SettingsActivity extends AppCompatActivity
 {
 
-    CheckBox check_1,check_2,check_3,check_4;
+    CheckBox check_1,check_2,check_3,check_4, check_7;
 
 
     @Override
@@ -31,6 +31,9 @@ public class SettingsActivity extends AppCompatActivity
         check_3  = (CheckBox) findViewById(R.id.check_3);
         check_4  = (CheckBox) findViewById(R.id.check_4);
 
+        //idle
+        check_7  = (CheckBox) findViewById(R.id.check_7);
+
         TableControllerLogTypes mySettings = new TableControllerLogTypes(getApplicationContext());
 
         mySettings.messageType = 1;
@@ -44,6 +47,12 @@ public class SettingsActivity extends AppCompatActivity
 
         mySettings.messageType = 4;
         check_4.setChecked(mySettings.isActive());
+
+
+        //load LogOffWhenIdle
+        //deze naar de load brengen
+        SharedPreferences prefs = getSharedPreferences("USER_PREFERENCES", MODE_PRIVATE);
+        check_7.setChecked(prefs.getBoolean("LogOffWhenIdle",true));
 
 
     }
@@ -77,15 +86,10 @@ public class SettingsActivity extends AppCompatActivity
     public void onCheckboxClickedPreferences(View view)
     {
 
-        SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
-        editor.putString("name", "Elena");
-        editor.putInt("idName", 12);
-        editor.apply();
+        SharedPreferences.Editor editor = getSharedPreferences("USER_PREFERENCES", MODE_PRIVATE).edit();
 
-        //deze naar de load brengen
-        SharedPreferences prefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
-        String name = prefs.getString("name", "No name defined");//"No name defined" is the default value.
-        int idName = prefs.getInt("idName", 0); //0 is the default value.
+        editor.putBoolean("LogOffWhenIdle",((CheckBox) view).isChecked());
+        editor.apply();
     }
 
 

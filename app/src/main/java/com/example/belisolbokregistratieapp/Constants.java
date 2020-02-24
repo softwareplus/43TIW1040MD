@@ -2,7 +2,7 @@ package com.example.belisolbokregistratieapp;
 
 public class Constants
 {
-        public static final String URL= "http://10.81.2.90/";
+        public static final String URL= "http://10.81.1.226/";
         public static final String ROOT_URL = URL+"android/crud_api/";
         public static final String URL_ADD = ROOT_URL+"add.php";
         //public static final String URL_DELETE = ROOT_URL+"delete.php";
