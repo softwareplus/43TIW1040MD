@@ -34,6 +34,10 @@ public class TableControllerLogTypes extends DatabaseHandler
     }
 
 
+
+
+
+
     public int returnIdFromCode(String loggingType)
     {
         String sqlstr = "select * from LoggingTypes where LoggingType ='" + loggingType + "'";

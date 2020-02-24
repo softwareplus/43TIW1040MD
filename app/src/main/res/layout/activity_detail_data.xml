@@ -78,7 +78,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="WEKELIJKSE NOTA"
+                android:text="NOTA BIJ OPHALING"
                 android:textColor="#546e7a"/>
 
             <TextView

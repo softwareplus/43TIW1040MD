@@ -6,11 +6,17 @@
 
 
         <TextView
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Logging settings"/>
+            android:text="ERRORS"
+            android:textStyle="bold"
+            />
 
         <CheckBox android:id="@+id/check_1"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="30sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/INFORMATION"
@@ -19,20 +25,63 @@
         <CheckBox android:id="@+id/check_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
             android:text="@string/WARNING"
             android:onClick="onCheckboxClicked"/>
 
         <CheckBox android:id="@+id/check_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
             android:text="@string/ERROR"
             android:onClick="onCheckboxClicked"/>
 
         <CheckBox android:id="@+id/check_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
             android:text="@string/VERBOSE"
             android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USER"
+            android:textStyle="bold"
+            />
+
+        <CheckBox android:id="@+id/check_5"
+            android:layout_marginTop="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="LOCATION"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox android:id="@+id/check_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="TIMEREGISTRATION"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PREFERENCES"
+            android:textStyle="bold"
+            />
+
+        <CheckBox android:id="@+id/check_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:text="LOG OFF when idle"
+            android:onClick="onCheckboxClickedPreferences"/>
 
 
 </LinearLayout>

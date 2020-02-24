@@ -1,5 +1,6 @@
 package com.example.belisolbokregistratieapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -11,7 +12,7 @@ import androidx.preference.PreferenceFragmentCompat;
 public class SettingsActivity extends AppCompatActivity
 {
 
-    CheckBox check_1,check_2,check_3,check_4;
+    CheckBox check_1,check_2,check_3,check_4, check_7;
 
 
     @Override
@@ -30,6 +31,9 @@ public class SettingsActivity extends AppCompatActivity
         check_3  = (CheckBox) findViewById(R.id.check_3);
         check_4  = (CheckBox) findViewById(R.id.check_4);
 
+        //idle
+        check_7  = (CheckBox) findViewById(R.id.check_7);
+
         TableControllerLogTypes mySettings = new TableControllerLogTypes(getApplicationContext());
 
         mySettings.messageType = 1;
@@ -43,6 +47,12 @@ public class SettingsActivity extends AppCompatActivity
 
         mySettings.messageType = 4;
         check_4.setChecked(mySettings.isActive());
+
+
+        //load LogOffWhenIdle
+        //deze naar de load brengen
+        SharedPreferences prefs = getSharedPreferences("USER_PREFERENCES", MODE_PRIVATE);
+        check_7.setChecked(prefs.getBoolean("LogOffWhenIdle",true));
 
 
     }
@@ -71,5 +81,16 @@ public class SettingsActivity extends AppCompatActivity
         mySettings.update();
 
 
-        }
+    }
+
+    public void onCheckboxClickedPreferences(View view)
+    {
+
+        SharedPreferences.Editor editor = getSharedPreferences("USER_PREFERENCES", MODE_PRIVATE).edit();
+
+        editor.putBoolean("LogOffWhenIdle",((CheckBox) view).isChecked());
+        editor.apply();
+    }
+
+
 }

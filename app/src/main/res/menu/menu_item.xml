@@ -5,11 +5,11 @@
         android:id="@+id/ItemDelivery"
         android:title="Expeditie"/>
 
-
     <item
         android:id="@+id/ItemSearch"
         android:title="Kantoor Informatie"/>
     <item
         android:id="@+id/ItemConfiguration"
         android:title="Instellingen"/>
+
 </menu>

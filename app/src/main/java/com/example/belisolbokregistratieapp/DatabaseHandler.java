@@ -29,6 +29,8 @@ public class DatabaseHandler extends SQLiteOpenHelper
                 "isActive INTEGER ) ";
 
         db.execSQL(sql);
+
+
     }
 
     @Override
